@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     protected int DB_CHECK(String username, String password) {
        int check = 0; // ALles sauber
@@ -21,7 +19,6 @@ public class Main {
         System.out.print("Enter password: ");
         String password_in = sc.nextLine();
 
-
         if (new Main().DB_CHECK(username_in, password_in) == 1){
             System.out.println("Username is wrong");
         } else if (new Main().DB_CHECK(username_in, password_in) == 2) {
@@ -30,6 +27,5 @@ public class Main {
         else {
             System.out.println("Willkommen");
         }
-
     }
 }
